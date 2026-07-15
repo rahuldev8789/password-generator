@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 4%;
+  width: 100%;
+  background-color: #0F172A;
+  color: #F9FAFB;
+}
+h1{
+  color: #F9FAFB;
+}
+span{
+  color: #22C55E;
+}
+#tag-el{
+  color: #D1D5DB;
+}
+
+/* BUTTON */
+button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #22C55E;
+  border-radius: 5px;
+}
+button:hover{
+  background: #16A34A;
+}
+/* LINE */
+.unline {
+  border-top: 1px solid  #374151;;
+  margin: 30px 0;
+  width: 80%;
+
+}
+
+/* PASSWORD CONTAINER */
+#copy-el {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* PASSWORD BOXES */
+#first-pw,
+#second-pw {
+  padding: 10px 40px;
+  background: #1F2937;
+  color: #16A34A;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 820px) {
+  button {
+    width: 180px;
+  }
+
+  #copy-el {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  button {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  #copy-el {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #first-pw,
+  #second-pw {
+    width: 80%;
+    
+  }
+}
